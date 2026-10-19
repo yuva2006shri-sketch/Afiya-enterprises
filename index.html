@@ -14,37 +14,35 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  color: #104778;
   background: #f5faff;
-  color: #183b5b;
 }
 
 header {
   background: white;
-  padding: 18px 5%;
-  text-align: center;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   box-shadow: 0 2px 8px #dce8f2;
 }
 
-header h1 {
-  color: #075b99;
+.logo h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 27px;
+  color: #075b99;
 }
 
-header p {
-  margin: 8px 0;
-}
-
-nav {
-  margin-top: 15px;
+.logo p {
+  margin: 5px 0 0;
 }
 
 nav a {
-  display: inline-block;
-  color: #183b5b;
   text-decoration: none;
-  margin: 7px 10px;
+  color: #104778;
   font-weight: bold;
+  margin: 8px;
 }
 
 nav a:hover {
@@ -53,37 +51,37 @@ nav a:hover {
 
 .hero {
   background: linear-gradient(120deg, #ccecff, #ffffff);
-  padding: 55px 7%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 25px;
+  padding: 45px 6%;
 }
 
-.hero-text {
+.hero-content {
   flex: 1;
 }
 
 .hero h2 {
-  font-size: 36px;
+  font-size: 38px;
+  margin: 0 0 15px;
   color: #075b99;
-  margin-top: 0;
 }
 
 .hero p {
   font-size: 17px;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .hero-image {
   flex: 1;
-  min-width: 0;
 }
 
 .hero-image img {
   width: 100%;
-  max-height: 290px;
-  object-fit: contain;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .btn {
@@ -91,18 +89,18 @@ nav a:hover {
   background: #0785d1;
   color: white;
   padding: 12px 20px;
+  margin: 5px 5px 5px 0;
   border-radius: 25px;
   text-decoration: none;
-  margin: 5px 5px 5px 0;
   font-weight: bold;
 }
 
-.btn:hover {
-  background: #075b99;
+.whatsapp {
+  background: #21a957;
 }
 
-.whatsapp {
-  background: #159b57;
+.btn:hover {
+  opacity: 0.85;
 }
 
 section {
@@ -111,43 +109,42 @@ section {
 }
 
 .section-title {
-  color: #075b99;
   font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  max-width: 1150px;
-  margin: 25px auto 0;
-}
-
-.card {
-  background: white;
-  padding: 12px;
-  border: 1px solid #d4eaff;
-  border-radius: 15px;
-  box-shadow: 0 3px 10px #e0edf7;
-  overflow: hidden;
-}
-
-.product-img {
-  width: 100%;
-  height: 190px;
-  object-fit: contain;
-  border-radius: 9px;
-  background: white;
-  display: block;
-}
-
-.card h3 {
   color: #075b99;
   margin-bottom: 8px;
 }
 
+.products {
+  max-width: 1150px;
+  margin: 25px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #d5eaff;
+  border-radius: 13px;
+  padding: 12px;
+  box-shadow: 0 2px 8px #e1edf7;
+}
+
+.card img {
+  width: 100%;
+  height: 185px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+}
+
+.card h3 {
+  margin: 12px 0 6px;
+  color: #075b99;
+}
+
 .card p {
+  margin: 8px 0 12px;
   line-height: 1.5;
 }
 
@@ -161,13 +158,28 @@ section {
 }
 
 footer {
+  text-align: center;
+  padding: 22px;
   background: #12456f;
   color: white;
-  padding: 22px;
-  text-align: center;
 }
 
 @media (max-width: 700px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    font-size: 14px;
+    margin: 7px;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
@@ -175,11 +187,11 @@ footer {
   }
 
   .hero h2 {
-    font-size: 28px;
+    font-size: 29px;
   }
 
   .hero-image img {
-    max-height: 220px;
+    height: 220px;
   }
 
   .products {
@@ -187,12 +199,12 @@ footer {
     gap: 12px;
   }
 
-  .product-img {
-    height: 135px;
+  .card {
+    padding: 8px;
   }
 
-  .card {
-    padding: 9px;
+  .card img {
+    height: 130px;
   }
 
   .card h3 {
@@ -203,11 +215,6 @@ footer {
     padding: 10px 13px;
     font-size: 13px;
   }
-
-  nav a {
-    margin: 7px;
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 380px) {
@@ -215,7 +222,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .product-img {
+  .card img {
     height: 200px;
   }
 }
@@ -225,67 +232,4 @@ footer {
 <body>
 
 <header>
-  <h1>🏠 Afiya Enterprises</h1>
-  <p>Your Home Appliances Store</p>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<!-- HOME SECTION -->
-
-<div class="hero" id="home">
-
-  <div class="hero-text">
-    <h2>Make Your Home More Comfortable!</h2>
-
-    <p>Explore Home Appliances at Afiya Enterprises</p>
-
-    <p>Quality Products | Trusted Service | Great Choices</p>
-
-    <a class="btn" href="#products">Explore Products</a>
-
-    <a class="btn whatsapp"
-       href="https://wa.me/919360783384"
-       target="_blank">
-       WhatsApp Us
-    </a>
-  </div>
-
-  <div class="hero-image">
-    <img
-      src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=80"
-      alt="Home appliances">
-  </div>
-
-</div>
-
-<!-- PRODUCTS SECTION -->
-
-<section id="products">
-
-  <h2 class="section-title">Our Products</h2>
-
-  <p>Contact us to know current prices and availability.</p>
-
-  <div class="products">
-
-    <!-- FRIDGE -->
-
-    <div class="card">
-
-      <img
-        class="product-img"
-        src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=600&q=80"
-        alt="Refrigerator">
-
-      <h3>Refrigerators</h3>
-
-      <p>Explore available models.</p>
-
-      <a class="btn"
-         href="https://wa.me/919360783384?text=I%20am%20interested%20in%
+  <div
