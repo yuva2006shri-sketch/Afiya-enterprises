@@ -3,50 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Afiya Enterprises | Home Appliances</title>
 
 <style>
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f5faff;
   color: #183b5b;
 }
+
 header {
   background: white;
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 8px #ddd;
 }
+
 header h1 {
   color: #087bc1;
   margin: 0;
 }
+
 nav {
   margin-top: 15px;
 }
+
 nav a {
   color: #183b5b;
   text-decoration: none;
   margin: 8px;
   font-weight: bold;
 }
+
 .hero {
   background: linear-gradient(135deg, #d7efff, #ffffff);
   text-align: center;
   padding: 55px 20px;
 }
+
 .hero h2 {
   font-size: 34px;
   color: #075b99;
 }
+
 .hero p {
   font-size: 18px;
 }
-button, .btn {
+
+.btn {
   display: inline-block;
   background: #0785d1;
   color: white;
@@ -57,39 +67,53 @@ button, .btn {
   margin: 5px;
   cursor: pointer;
 }
+
 section {
   padding: 35px 18px;
   text-align: center;
 }
+
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
-  gap: 15px;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  max-width: 1100px;
   margin: auto;
 }
+
 .card {
   background: white;
-  padding: 20px 10px;
+  padding: 15px;
   border-radius: 15px;
   box-shadow: 0 2px 10px #dce8f2;
+  overflow: hidden;
 }
-.card .icon {
-  font-size: 48px;
+
+.product-img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+  background: #fff;
 }
+
 .card h3 {
   color: #075b99;
 }
+
 .contact {
   background: #e2f3ff;
   line-height: 1.8;
 }
+
 footer {
   background: #12456f;
   color: white;
   padding: 20px;
   text-align: center;
 }
+
 .whatsapp {
   background: #159b57;
 }
@@ -101,6 +125,7 @@ footer {
 <header>
   <h1>🏠 Afiya Enterprises</h1>
   <p>Your Home Appliances Store</p>
+
   <nav>
     <a href="#home">Home</a>
     <a href="#products">Products</a>
@@ -113,7 +138,9 @@ footer {
   <h2>Make Your Home More Comfortable!</h2>
   <p>Explore Home Appliances at Afiya Enterprises</p>
   <p>Quality Products | Trusted Service | Great Choices</p>
+
   <a class="btn" href="#products">Explore Products</a>
+
   <a class="btn whatsapp"
      href="https://wa.me/919360783384"
      target="_blank">WhatsApp Us</a>
@@ -125,46 +152,82 @@ footer {
 
   <div class="products">
 
+    <!-- Refrigerator -->
     <div class="card">
-      <div class="icon">🧊</div>
+      <img class="product-img"
+           src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=600&q=80"
+           alt="Refrigerator"
+           loading="lazy">
       <h3>Refrigerators</h3>
       <p>Explore available models.</p>
-      <a class="btn" href="https://wa.me/919360783384?text=I%20am%20interested%20in%20refrigerators">Enquire</a>
+      <a class="btn"
+         href="https://wa.me/919360783384?text=I%20am%20interested%20in%20refrigerators"
+         target="_blank">Enquire</a>
     </div>
 
+    <!-- Washing Machine -->
     <div class="card">
-      <div class="icon">🧺</div>
+      <img class="product-img"
+           src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=600&q=80"
+           alt="Washing Machine"
+           loading="lazy">
       <h3>Washing Machines</h3>
       <p>Find the right option for your home.</p>
-      <a class="btn" href="https://wa.me/919360783384?text=I%20am%20interested%20in%20washing%20machines">Enquire</a>
+      <a class="btn"
+         href="https://wa.me/919360783384?text=I%20am%20interested%20in%20washing%20machines"
+         target="_blank">Enquire</a>
     </div>
 
+    <!-- Television -->
     <div class="card">
-      <div class="icon">📺</div>
+      <img class="product-img"
+           src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=600&q=80"
+           alt="Television"
+           loading="lazy">
       <h3>Televisions</h3>
       <p>Ask about available models.</p>
-      <a class="btn" href="https://wa.me/919360783384?text=I%20am%20interested%20in%20televisions">Enquire</a>
+      <a class="btn"
+         href="https://wa.me/919360783384?text=I%20am%20interested%20in%20televisions"
+         target="_blank">Enquire</a>
     </div>
 
+    <!-- Air Conditioner -->
     <div class="card">
-      <div class="icon">❄️</div>
+      <img class="product-img"
+           src="https://images.unsplash.com/photo-1631545806609-7c1efc6f2a1b?auto=format&fit=crop&w=600&q=80"
+           alt="Air Conditioner"
+           loading="lazy">
       <h3>Air Conditioners</h3>
       <p>Explore AC options.</p>
-      <a class="btn" href="https://wa.me/919360783384?text=I%20am%20interested%20in%20air%20conditioners">Enquire</a>
+      <a class="btn"
+         href="https://wa.me/919360783384?text=I%20am%20interested%20in%20air%20conditioners"
+         target="_blank">Enquire</a>
     </div>
 
+    <!-- Mixer Grinder -->
     <div class="card">
-      <div class="icon">🥤</div>
+      <img class="product-img"
+           src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=600&q=80"
+           alt="Kitchen Appliance"
+           loading="lazy">
       <h3>Mixer Grinders</h3>
       <p>Useful kitchen appliances.</p>
-      <a class="btn" href="https://wa.me/919360783384?text=I%20am%20interested%20in%20mixer%20grinders">Enquire</a>
+      <a class="btn"
+         href="https://wa.me/919360783384?text=I%20am%20interested%20in%20mixer%20grinders"
+         target="_blank">Enquire</a>
     </div>
 
+    <!-- Kitchen Appliances -->
     <div class="card">
-      <div class="icon">🍲</div>
+      <img class="product-img"
+           src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80"
+           alt="Kitchen Appliances"
+           loading="lazy">
       <h3>Kitchen Appliances</h3>
       <p>Ask about available products.</p>
-      <a class="btn" href="https://wa.me/919360783384?text=I%20am%20interested%20in%20kitchen%20appliances">Enquire</a>
+      <a class="btn"
+         href="https://wa.me/919360783384?text=I%20am%20interested%20in%20kitchen%20appliances"
+         target="_blank">Enquire</a>
     </div>
 
   </div>
@@ -184,6 +247,7 @@ footer {
   <h2>Contact Us</h2>
 
   <p><strong>Shop Address:</strong></p>
+
   <p>
     7th Bharathi Nagar Road,<br>
     Bharathi Nagar, PTMS,<br>
